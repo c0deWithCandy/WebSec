@@ -1,0 +1,5 @@
+# Ignore any local private files
+*.key
+*.pem
+.env
+reports/*.db
